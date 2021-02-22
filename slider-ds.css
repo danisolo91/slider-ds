@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 30px;
+    background-color: #60a3bc;
+}
+
+#slider-ds {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 1px 3px #444;
+}
+
+#slider-ds .slides {
+    display: flex;
+    height: 350px;
+}
+
+#slider-ds .slides img {
+    width: 100%;
+}
+
+#prev-btn {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    z-index: 10;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+    text-shadow: 0 1px 3px #000;
+}
+
+#next-btn {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    z-index: 10;
+    color: white;
+    opacity: 0.7;
+    cursor: pointer;
+    text-shadow: 0 1px 3px #000;
+}
+
+
