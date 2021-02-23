@@ -85,8 +85,20 @@ const SliderDS = () => {
         });
     };
 
+    const startAutoAdvance = () => {
+        setInterval(() => {
+            slides[counter].classList.remove('show');
+            circles[counter].classList.remove('selected');
+            counter++;
+            if(counter >= slides.length) counter = 0;
+            slides[counter].classList.add('show');
+            circles[counter].classList.add('selected');
+        }, 5000);
+    };
+
     const init = () => {
         loadEventListeners();
+        startAutoAdvance();
     };
 
     return { init }
