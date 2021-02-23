@@ -1,6 +1,10 @@
+:root {
+    --slider-height: 350px;
+  }
+
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 body {
@@ -10,19 +14,18 @@ body {
 
 #slider-ds {
     position: relative;
-    width: 50%;
+    width: 60%;
+    height: var(--slider-height);
     margin: auto;
-    overflow: hidden;
-    box-shadow: 0 1px 3px #444;
+    box-shadow: 0 1px 3px #000;
 }
 
-#slider-ds .slides {
-    display: flex;
-    height: 350px;
-}
-
-#slider-ds .slides img {
+#slider-ds img {
+    position: absolute;
+    opacity: 0;
     width: 100%;
+    height: var(--slider-height);
+    transition: opacity 0.4s ease-in-out;
 }
 
 #prev-btn {
@@ -47,4 +50,6 @@ body {
     text-shadow: 0 1px 3px #000;
 }
 
-
+#slider-ds .show {
+    opacity: 1;
+}
