@@ -16,9 +16,7 @@ const SliderDS = () => {
         const btn = document.createElement('i');
 
         btn.id = 'prev-btn';
-        btn.classList.add('fas');
-        btn.classList.add('fa-arrow-circle-left');
-        btn.classList.add('fa-2x');
+        btn.className = 'fas fa-arrow-circle-left fa-2x';
 
         slider.appendChild(btn);
 
@@ -29,9 +27,7 @@ const SliderDS = () => {
         const btn = document.createElement('i');
 
         btn.id = 'next-btn';
-        btn.classList.add('fas');
-        btn.classList.add('fa-arrow-circle-right');
-        btn.classList.add('fa-2x');
+        btn.className = 'fas fa-arrow-circle-right fa-2x';
 
         slider.appendChild(btn);
 
